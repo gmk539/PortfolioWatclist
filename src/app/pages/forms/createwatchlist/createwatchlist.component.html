@@ -1,0 +1,107 @@
+<div class="row">
+    <div class="col-md-6">
+        <nb-card>
+            <nb-card-header>Add a new recommendation list
+                &nbsp;
+                <button type="submit" (click)="addNewWatchList()" nbButton status="primary"><i class="nb-plus"></i>
+                </button>
+
+            </nb-card-header>
+            <nb-card-body>
+                <form class="form-horizontal">
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="label col-sm-3 form-control-label">Name</label>
+                        <div class="col-sm-9" *ngIf="!hasWatchListName">
+                            <input type="text" name="WatchListName" [(ngModel)]="watchListName" nbInput fullWidth
+                                id="WatchListName" placeholder="Watch list Name">
+                        </div>
+                        <div class="col-sm-9" *ngIf="hasWatchListName">
+                            <input type="text" name="WatchListName" [(ngModel)]="watchListName" nbInput fullWidth
+                                id="WatchListName" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="label col-sm-3 form-control-label">Company/Fund</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="companyname" [(ngModel)]="companynameTemp" nbInput fullWidth
+                                id="inputCompany" placeholder="Company/Fund"
+                                (ngModelChange)="findComapnyPrice(companynameTemp)">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="label col-sm-3 form-control-label">Company Ticker</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="companyId" [(ngModel)]="companyId" nbInput fullWidth id="companyId"
+                                placeholder="Company Id" disabled>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="label col-sm-3 form-control-label">Current price</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="currentprice" [(ngModel)]="currentprice" nbInput fullWidth
+                                id="inputCompany" placeholder="Current price" disabled>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="label col-sm-3 form-control-label">Minimum Price</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="minimumPrice" [(ngModel)]="minimumPrice" nbInput fullWidth
+                                id="inputMinPrice" placeholder="Minimum Price">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="label col-sm-3 form-control-label">Maximum Price</label>
+                        <div class="col-sm-9">
+                            <input type="text" name="maxmimumPrice" [(ngModel)]="maxmimumPrice" nbInput fullWidth
+                                id="inputMaxPrice" placeholder="Maximum Price">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputPassword3" class="label col-sm-3 form-control-label">Include News/Event</label>
+                        <div class="checkbox col-sm-9">
+                            <nb-checkbox name="includeEvent" [(ngModel)]="includeEvent"></nb-checkbox>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <button type="submit" (click)="addCompany(watchListName)" nbButton status="success">Add
+                                New / Update</button>
+                        </div>
+                    </div>
+                </form>
+            </nb-card-body>
+        </nb-card>
+    </div>
+    <div class="col-md-6">
+        <nb-card class="list-card">
+            <nb-card-header>Company / funds</nb-card-header>
+            <nb-card-body *ngIf="data.length > 0; else emptyWatchlist">
+                <nb-list nbInfiniteList listenWindowScroll [threshold]="3">
+                    <nb-list-item *ngFor="let item of data[0].Companies">
+                        <div class="buttons-row">
+                            <button nbButton status="info" (click)="selectCompany(item.Companyid, watchListName)"
+                                outline><b>Company : </b> {{ item.Companyid }}</button>
+                            <button nbButton status="primary" (click)="selectCompany(item.Companyid, watchListName)"
+                                outline><b>Price Range : </b> {{item.Minmumprice }} -
+                                {{ item.Maximumprice}}</button>
+                            <button nbButton status="info" (click)="selectCompany(item.Companyid, watchListName)"
+                                outline><b>News/Events :
+                                </b> {{item.IncludeNewsEvents}}</button>
+                        </div>
+                    </nb-list-item>
+                </nb-list>
+                <div class="offset-sm-4 col-sm-12">
+                    <button type="submit" nbButton status="info" (click)="saveWatchList()">Save Watch list</button>
+                </div>
+            </nb-card-body>
+            <ng-template #emptyWatchlist>
+                <div class="flex-centered col-xl-4 col-lg-6 col-md-8 col-sm-12">
+                    <h6>Empty List</h6>
+                </div>
+            </ng-template>
+        </nb-card>
+    </div>
+</div>

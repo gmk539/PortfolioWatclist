@@ -1,0 +1,19 @@
+<div>
+<div class="row" style="background-color:mediumspringgreen;">
+    <div class="col-md-6" style="font-size: 18px;font-weight: bold;">Company</div>
+    <div class="col-md-6" style="font-size: 18px;font-weight: bold;">Current Share Price($)</div>
+</div>
+  <div *ngFor="let group of Products"> 
+    <div *ngFor="let company of group.Companies" >
+     <div class="row" *ngIf="company.IsRecommended"> 
+         <div class="col-md-8" style="padding: 10px;">
+            <a class="textStyles" (click)="_sendCompanyDetails(company.name)">{{company.name}} </a>
+         </div>
+         <div class="col-md-4" style="padding: 10px;">
+           {{company.CurrentPrice}}
+         </div>
+        
+     </div>
+ </div>
+</div>
+ </div>

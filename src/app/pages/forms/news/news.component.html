@@ -1,0 +1,13 @@
+<nb-card>
+    <nb-card-header>News & Events - {{this.companyName}}</nb-card-header>
+    <nb-card-body>
+        <!-- <ul>
+            <li *ngFor="let item of newsItems; let i = index">
+                <div [ngClass]="{'background-neautral': item.score===0.5, 'background-bad':item.score===0 ,'background-good':item.score===1}">{{item.news}}</div>
+            </li>
+        </ul> -->
+        <div *ngFor="let item of newsItems; let i = index">
+            <div [ngClass]="{'news-div':true , 'background-neautral': item.score===0.5, 'background-bad':item.score===0 ,'background-good':item.score===1}">{{item.News}}</div>
+        </div>
+    </nb-card-body>
+</nb-card>

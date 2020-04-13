@@ -1,0 +1,27 @@
+<div>
+  <ngx-create-watchlist></ngx-create-watchlist>
+</div>
+
+  <div>
+    <div class="row">
+         <div class="col-md-4">
+          <nb-card>
+            <nb-card-header>Recommended Companies</nb-card-header>
+            <nb-card-body>
+              <recommendedInfo (sendCompanyDetails)="receiveData($event)"></recommendedInfo>
+            </nb-card-body>
+          </nb-card>
+         </div>
+         <div class="col-md-4">
+          <ngx-news [companyName]="this.datafromChild"></ngx-news>
+         </div>
+         <div class="col-md-4">
+          <nb-card>
+            <nb-card-header>Price Timeline</nb-card-header>
+            <nb-card-body>
+              <ngx-timeline [companyName]="this.datafromChild"></ngx-timeline>
+            </nb-card-body>
+          </nb-card>
+    </div>
+  </div>
+</div>

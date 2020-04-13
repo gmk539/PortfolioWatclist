@@ -1,0 +1,94 @@
+{
+    "Companies": [
+        {
+            "Name": "International Business Machines Corporation",
+            "Symbol": "IBM-USA",
+            "Price": "121.32",
+            "Currency": "USD"
+        },
+        {
+            "Name": "Alphabet Inc. Class A",
+            "Symbol": "GOOGL-USA",
+            "Price": "1212.96",
+            "Currency": "USD"
+        },
+        {
+            "Name": "Tata Motors Limited Sponsored ADR",
+            "Symbol": "TTM-USA",
+            "Price": "5.14",
+            "Currency": "USD"
+        },
+        {
+            "Name": "Factset Research Systems Inc.",
+            "Symbol": "FDS-USA",
+            "Price": "276.13",
+            "Currency": "USD"
+        },
+        {
+            "Name": "Wells Fargo & Company",
+            "Symbol": "WFC-USA",
+            "Price": "33.09",
+            "Currency": "USD"
+        },
+        {
+            "Name": "Bank of America Corp",
+            "Symbol": "BAC-USA",
+            "Price": "24.55",
+            "Currency": "USD"
+        },
+        {
+            "Name": "InterGlobe Aviation Ltd",
+            "Symbol": "INDIGO-IND",
+            "Price": "1041.95",
+            "Currency": "INR"
+        },
+        {
+            "Name": "L&T Technology Services Ltd.",
+            "Symbol": "LTTS-IND",
+            "Price": "1173.85",
+            "Currency": "INR"
+        },
+        {
+            "Name": "Avenue Supermarts Ltd",
+            "Symbol": "DMART-IND",
+            "Price": "2392.65",
+            "Currency": "INR"
+        },
+        {
+            "Name": "State Bank of India",
+            "Symbol": "SBIN-IND",
+            "Price": "187.75",
+            "Currency": "INR"
+        },
+        {
+            "Name": "JPMorgan Chase & Co.",
+            "Symbol": "JPM-USA",
+            "Price": "100.70",
+            "Currency": "USD"
+        },
+        {
+            "Name": "Amazon.com, Inc.",
+            "Symbol": "AMZN-USA",
+            "Price": "2025.94",
+            "Currency": "USD"
+        },
+        {
+            "Name": "3M Company",
+            "Symbol": "MMM-USA",
+            "Price": "148.21",
+            "Currency": "USD"
+        },
+        {
+            "Name": "General Motors Company",
+            "Symbol": "GM-USA",
+            "Price": "24.09",
+            "Currency": "USD"
+        },
+        {
+            "Name": "Omega Healthcare Investors, Inc.",
+            "Symbol": "OHI-USA",
+            "Price": "34.34",
+            "Currency": "USD"
+        }
+    ]
+}

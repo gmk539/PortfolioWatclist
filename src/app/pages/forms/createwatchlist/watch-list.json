@@ -1,0 +1,162 @@
+[
+    {
+        "WatchListName": "US Market",
+        "WatchListId": 1,
+        "CreateDate": "2020-09-04",
+        "status": "Active",
+        "Companies": [
+            {
+                "Companyid": "FDS-USA",
+                "name": "Factset Research Systems Inc.",
+                "CurrentPrice": "276.13",
+                "Minmumprice": "250",
+                "Maximumprice": "300",
+                "IncludeNewsEvents": "Yes"
+            },
+            {
+                "Companyid": "GOOGL-USA",
+                "name": "Alphabet Inc. Class A",
+                "CurrentPrice": "1212.96",
+                "Minmumprice": "1200",
+                "Maximumprice": "1300",
+                "IncludeNewsEvents": "Yes"
+            },
+            {
+                "Companyid": "MSFT-USA",
+                "name": "Microsoft Corporation",
+                "CurrentPrice": "165.14",
+                "Minmumprice": "160",
+                "Maximumprice": "200",
+                "IncludeNewsEvents": "Yes"
+            },
+            {
+                "Companyid": "APPL-USA",
+                "name": "Apple Inc.",
+                "CurrentPrice": "267.99",
+                "Minmumprice": "250",
+                "Maximumprice": "350",
+                "IncludeNewsEvents": "Yes"
+            }
+        ]
+    },
+    {
+        "WatchListName": "Ind Market",
+        "WatchListId": 2,
+        "CreateDate": "2020-01-04",
+        "status": "Active",
+        "Companies": [
+            {
+                "Companyid": "INDIGO-IND",
+                "name": "InterGlobe Aviation Ltd",
+                "CurrentPrice": "1041.95",
+                "Minmumprice": "1020",
+                "Maximumprice": "1200",
+                "IncludeNewsEvents": "Yes"
+            },
+            {
+                "Companyid": "LTTS-IND",
+                "name": "L&T Technology Services Ltd.",
+                "CurrentPrice": "1173.85",
+                "Minmumprice": "1100",
+                "Maximumprice": "1400",
+                "IncludeNewsEvents": "Yes"
+            },
+            {
+                "Companyid": "DMART-IND",
+                "name": "Avenue Supermarts Ltd",
+                "CurrentPrice": "2392.65",
+                "Minmumprice": "2350",
+                "Maximumprice": "2600",
+                "IncludeNewsEvents": "Yes"
+            },
+            {
+                "Companyid": "SBIN-IND",
+                "name": "State Bank of India",
+                "CurrentPrice": "187.75",
+                "Minmumprice": "170",
+                "Maximumprice": "400",
+                "IncludeNewsEvents": "Yes"
+            }
+        ]
+    },
+    {
+        "WatchListName": "Favourites",
+        "WatchListId": 3,
+        "CreateDate": "2020-04-10",
+        "status": "Active",
+        "Companies": [
+            {
+                "Companyid": "AMZN-USA",
+                "name": "Amazon.com, Inc.",
+                "CurrentPrice": "2025.94",
+                "Minmumprice": "2010",
+                "Maximumprice": "2100",
+                "IncludeNewsEvents": "Yes"
+            },
+            {
+                "Companyid": "MMM-USA",
+                "name": "3M Company",
+                "CurrentPrice": "148.21",
+                "Minmumprice": "135",
+                "Maximumprice": "200",
+                "IncludeNewsEvents": "Yes"
+            },
+            {
+                "Companyid": "GM-USA",
+                "name": "General Motors Company",
+                "CurrentPrice": "24.09",
+                "Minmumprice": "22",
+                "Maximumprice": "40",
+                "IncludeNewsEvents": "Yes"
+            },
+            {
+                "Companyid": "IBM-USA",
+                "name": "International Business Machines Corporation",
+                "CurrentPrice": "121.32",
+                "Minmumprice": "120",
+                "Maximumprice": "130",
+                "IncludeNewsEvents": "Yes"
+            },
+            {
+                "Companyid": "Tata Motors Limited Sponsored ADR",
+                "name": "TTM-USA",
+                "CurrentPrice": "5.14",
+                "Minmumprice": "5",
+                "Maximumprice": "7",
+                "IncludeNewsEvents": "Yes"
+            }
+        ]
+    },
+    {
+        "WatchListName": "Banks",
+        "WatchListId": 4,
+        "CreateDate": "2020-04-10",
+        "status": "Active",
+        "Companies": [
+            {
+                "Companyid": "WFC-USA",
+                "name": "Wells Fargo & Company",
+                "CurrentPrice": "33.09",
+                "Minmumprice": "30",
+                "Maximumprice": "40",
+                "IncludeNewsEvents": "Yes"
+            },
+            {
+                "Companyid": "JPM-USA",
+                "name": "JPMorgan Chase & Co.",
+                "CurrentPrice": "100.70",
+                "Minmumprice": "100",
+                "Maximumprice": "300",
+                "IncludeNewsEvents": "Yes"
+            },
+            {
+                "Companyid": "BAC-USA",
+                "name": "Bank of America Corp",
+                "CurrentPrice": "24.55",
+                "Minmumprice": "20",
+                "Maximumprice": "30",
+                "IncludeNewsEvents": "Yes"
+            }
+        ]
+    }
+]

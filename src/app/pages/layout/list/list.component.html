@@ -1,0 +1,36 @@
+<div class="lists row">
+  <div class="col-md-12 col-lg-6 col-xxxl-6">
+    <nb-card class="list-card">
+      <nb-card-header>My Recommendations</nb-card-header>
+      <nb-card-body>
+        <table cellpadding="15" class="table table-striped"> 
+          <thead>
+          <tr>
+            <th>Recommendations</th>
+            <th>Created Date</th>
+            <th>Status</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let wlist of watchlists1" (click) = "setCompanyName(wlist.WatchListName)">
+            <td> 
+              <a [routerLink]="['/pages/forms//layouts', wlist.WatchListName]"> {{ wlist.WatchListName  }} </a>
+             </td >
+            <td>
+              {{wlist.CreateDate}}
+            </td>
+            <td>
+              <span *ngIf="wlist.IsRecommended==true">
+              <nb-icon _ngcontent-bhk-c312="" pack="fa" _nghost-bhk-c76="" class="fas fa-circle" style="color: green;"></nb-icon>
+              </span>
+              <span *ngIf="wlist.IsRecommended==false">
+                <nb-icon _ngcontent-bhk-c312="" pack="fa" _nghost-bhk-c76="" class="fas fa-circle" style="color: red;"></nb-icon>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+        </nb-card-body>
+    </nb-card>
+  </div>
+</div>
